@@ -5,5 +5,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code from repo
+        uses: actions/checkout@v4
       - name: use custom action
         uses: ./.github/actions/hello-world-action
