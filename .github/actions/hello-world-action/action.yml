@@ -1,7 +1,9 @@
-jobs:
-  my_first_job:
-    steps:
-      - name: Setup node v14
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
+name: Setup node v14
+description: Setup node v14 to test custom action
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup node v14
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
