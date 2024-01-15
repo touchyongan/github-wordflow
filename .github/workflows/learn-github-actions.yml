@@ -8,4 +8,4 @@ jobs:
       - name: Checkout code from repo
         uses: actions/checkout@v4
       - name: Use local hello-world-action
-        uses: .github/actions/hello-world-action
+        uses: /.github/actions/hello-world-action
